@@ -1,14 +1,32 @@
-
-
 <main class="main">
   <div class="content">
-    TEST {{title}}
+
+    <div class="pageTitle">
+      {{title}}
+    </div>
+
+
     <div class="timeline">
-      <div *ngFor="let job of timeline">
-          company: {{job.company}}<br>
+      <div *ngFor="let job of timeline" class="timeline-item">
+        <div class="timeline-card">
+          <div class="job-summary">
+            <div class="title">
+              {{ job.company }}
+            </div>
+            <div class="subtitle">
+              {{ job.jobTitle }}
+            </div>
+            <div class="timespan">
+              {{ job.start }} - {{ job.end }}
+            </div>
+          </div>
+          <div class="job-details">
+            DETAILS
+          </div>
+        </div>
       </div>
     </div>
-   </div>
+  </div>
 
 </main>
 

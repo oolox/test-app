@@ -16,17 +16,20 @@ export class AppComponent {
   timeline: any = [
     {
       company: 'Plume',
+      jobTitle: 'Lead Front End Developer',
       start: '2018',
       end: '2024'
 
     },
     {
       company: 'AgileOne',
+      jobTitle: 'Lead Front End Developer',
       start: '2016',
       end: '2018'
     },
     {
       company: 'Badgeville',
+      jobTitle: 'Front End Developer',
       start: '2015',
       end: '2016'
     }
