@@ -7,6 +7,7 @@ export const titlestr = 'Paul Cousineau';
 export const timelinedata: jobItemType[] = [
     {
       company: 'Plume',
+      location: 'Palo Alto, CA',
       jobTitle: 'Lead Front End Developer',
       start: '2018',
       end: '2024',
@@ -43,6 +44,7 @@ export const timelinedata: jobItemType[] = [
     {
       company: 'AgileOne',
       jobTitle: 'Lead Front End Developer',
+      location: 'Sunnyvale, CA',
       start: '2016',
       end: '2018',
       screenshots: [
@@ -58,12 +60,12 @@ export const timelinedata: jobItemType[] = [
         { fileName:'assets/img/a1-1.png',
           description:'desc1'
         }
-
       ]
     },
     {
       company: 'Badgeville',
       jobTitle: 'Front End Developer',
+      location: 'Redwood City, CA',
       start: '2015',
       end: '2016',
       screenshots: [
@@ -81,5 +83,23 @@ export const timelinedata: jobItemType[] = [
         }
 
       ]
-    }
+    },
+  {
+    company: 'Contracts',
+    jobTitle: 'IOT Developer',
+    location: 'Denver, CO',
+    start: '2014',
+    end: '2010',
+    screenshots: [
+      { fileName:'assets/img/adrGarage.png',
+        description:'desc1'
+      },
+      { fileName:'assets/img/beerlog.png',
+        description:'desc1'
+      },
+      { fileName:'assets/img/simulcare.png',
+        description:'desc1'
+      }
+    ]
+  }
   ];

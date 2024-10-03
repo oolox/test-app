@@ -3,6 +3,7 @@ export interface jobItemType {
   jobTitle: string;
   start: string;
   end: string;
+  location?: string;
   selected?: boolean;
   screenshots?: screenshotType[];
 }
