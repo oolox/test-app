@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import {jobItemType} from "./app.types";
+import {jobItemType, screenshotType} from "./app.types";
 import {timelinedata,titlestr} from "./services/timelineData";
 
 @Component({
@@ -17,14 +17,19 @@ export class AppComponent {
 
   timeline = timelinedata;
   title:string= titlestr;
+  showModal:boolean= false;
+  showScreen:screenshotType | null= null;
 
   selectItem(item:jobItemType) {
     item.selected=!item.selected;
-    console.log('selectItem: ',item);
   }
 
-
-
+  onEvent(event:Event, item:screenshotType) {
+    console.log('screenshotType: ',item);
+    this.showModal=true;
+    this.showScreen= item;
+    event.stopPropagation();
+  }
 
 }
 

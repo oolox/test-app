@@ -1,3 +1,7 @@
+body {
+  background-color: #f0f0f0;
+  color: #202020;
+}
 
 .content {
   font-family: Noto Sans, sans-serif;
@@ -15,7 +19,7 @@
         display: inline-flex;
         margin-bottom: 1rem;
         width: 100%;
-        max-width: 800px;
+        max-width: 1200px;
 
         .job-summary {
           display:inline-block;
@@ -38,28 +42,49 @@
           }
 
         }
-
         .job-details {
           display:inline-block;
           padding: 1rem;
           background-color: darkgray;
           border-radius: 0 1rem 1rem 0;
           width: 67%;
-        }
 
+
+        }
         .screenshots
         {
           display: inline-flex;
-          .screenImg {
+          .screenshot {
+            cursor: pointer;
             padding: 0.5rem;
+            .screenImg {
+
+            }
+            .screenDescription {
+              font-size: 0.8rem;
+            }
           }
         }
 
       }
     }
-
-
   }
 }
+.modal {
+  cursor: pointer;
+  background: #f0f0f0;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  text-align: center;
 
+  .screenImg {
+    padding-top: 1rem;
+  }
 
+  .screenTitle {
+    padding-top: 0.5rem;
+  }
+}

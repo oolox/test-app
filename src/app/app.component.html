@@ -21,9 +21,13 @@
             </div>
           </div>
           <div class="job-details">
+            JOB DETAIL LIST HERE
             <div *ngIf="job.selected">
               <div *ngFor="let screen of job.screenshots" class="screenshots" >
-                <img class="screenImg" alt="plume1" src="{{screen.fileName}}" height="100" width="120"/>
+                <div class="screenshot" (click)="onEvent($event,screen)">
+                  <img class="screenImg" alt="plume1" src="{{screen.fileName}}" height="100" width="120"/>
+                  <div class="screenDescription">{{screen.description}}</div>
+                </div>
               </div>
             </div>
           </div>
@@ -31,6 +35,13 @@
       </div>
     </div>
   </div>
+
+  <div class="modal" *ngIf="showModal" (click)="showModal=false">
+      <img class="screenImg" alt="plume1" src="{{showScreen?.fileName}}" width="auto" height="600"/>
+      <div class="screenTitle">{{ showScreen?.description }}</div>
+  </div>
+
+
 
 </main>
 

@@ -46,16 +46,16 @@ export const timelinedata: jobItemType[] = [
       start: '2016',
       end: '2018',
       screenshots: [
-        { fileName:'assets/img/a1-1.png',
+        { fileName:'assets/img/a1-2.png',
           description:'desc1'
         },
-        { fileName:'assets/img/a1-2.png',
+        { fileName:'assets/img/a1-4.png',
           description:'desc1'
         },
         { fileName:'assets/img/a1-3.png',
           description:'desc1'
         },
-        { fileName:'assets/img/a1-4.png',
+        { fileName:'assets/img/a1-1.png',
           description:'desc1'
         }
 
