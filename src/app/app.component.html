@@ -21,31 +21,18 @@
             </div>
           </div>
           <div class="job-details">
-            DETAILS
-            <code *ngIf="job.selected">
-              SELECTED
-            </code>
-
-
-
+            <div *ngIf="job.selected">
+              <div *ngFor="let screen of job.screenshots" class="screenshots" >
+                <img class="screenImg" alt="plume1" src="{{screen.fileName}}" height="100" width="120"/>
+              </div>
+            </div>
           </div>
-
-
-
         </div>
       </div>
     </div>
   </div>
 
 </main>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
 <router-outlet />

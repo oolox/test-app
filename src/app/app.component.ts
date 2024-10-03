@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import {jobItem} from "./app.types";
+import {jobItemType} from "./app.types";
+import {timelinedata,titlestr} from "./services/timelineData";
 
 @Component({
   selector: 'app-root',
@@ -12,31 +13,12 @@ import {jobItem} from "./app.types";
 })
 
 export class AppComponent {
-  title = 'Paul Cousineau';
 
 
-  timeline: jobItem[] = [
-    {
-      company: 'Plume',
-      jobTitle: 'Lead Front End Developer',
-      start: '2018',
-      end: '2024'
-    },
-    {
-      company: 'AgileOne',
-      jobTitle: 'Lead Front End Developer',
-      start: '2016',
-      end: '2018'
-    },
-    {
-      company: 'Badgeville',
-      jobTitle: 'Front End Developer',
-      start: '2015',
-      end: '2016'
-    }
-  ];
+  timeline = timelinedata;
+  title:string= titlestr;
 
-  selectItem(item:jobItem) {
+  selectItem(item:jobItemType) {
     item.selected=!item.selected;
     console.log('selectItem: ',item);
   }

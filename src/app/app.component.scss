@@ -47,6 +47,14 @@
           width: 67%;
         }
 
+        .screenshots
+        {
+          display: inline-flex;
+          .screenImg {
+            padding: 0.5rem;
+          }
+        }
+
       }
     }
 
