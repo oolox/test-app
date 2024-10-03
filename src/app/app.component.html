@@ -8,7 +8,7 @@
 
     <div class="timeline">
       <div *ngFor="let job of timeline" class="timeline-item">
-        <div class="timeline-card">
+        <div class="timeline-card" (click)="selectItem(job)">
           <div class="job-summary">
             <div class="title">
               {{ job.company }}
@@ -22,7 +22,16 @@
           </div>
           <div class="job-details">
             DETAILS
+            <code *ngIf="job.selected">
+              SELECTED
+            </code>
+
+
+
           </div>
+
+
+
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import {jobItem} from "./app.types";
 
 @Component({
   selector: 'app-root',
@@ -9,17 +10,17 @@ import { CommonModule } from '@angular/common';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
+
 export class AppComponent {
-  title = 'test-app';
+  title = 'Paul Cousineau';
 
 
-  timeline: any = [
+  timeline: jobItem[] = [
     {
       company: 'Plume',
       jobTitle: 'Lead Front End Developer',
       start: '2018',
       end: '2024'
-
     },
     {
       company: 'AgileOne',
@@ -33,7 +34,16 @@ export class AppComponent {
       start: '2015',
       end: '2016'
     }
-  ]
+  ];
+
+  selectItem(item:jobItem) {
+    item.selected=!item.selected;
+    console.log('selectItem: ',item);
+  }
+
+
 
 
 }
+
+
