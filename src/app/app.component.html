@@ -1,11 +1,8 @@
 <main class="main">
   <div class="content">
-
     <div class="pageTitle">
       {{title}}
     </div>
-
-
     <div class="timeline">
       <div *ngFor="let job of timeline" class="timeline-item">
         <div class="timeline-card" (click)="selectItem(job)">
@@ -21,12 +18,15 @@
             </div>
           </div>
           <div class="job-details">
-            JOB DETAIL LIST HERE
+            <ul>
+              <li *ngFor="let detail of job.details">
+                {{detail}}
+              </li>
+            </ul>
             <div *ngIf="job.selected">
               <div *ngFor="let screen of job.screenshots" class="screenshots" >
                 <div class="screenshot" (click)="onEvent($event,screen)">
                   <img class="screenImg" alt="plume1" src="{{screen.fileName}}" height="100" width="120"/>
-                  <div class="screenDescription">{{screen.description}}</div>
                 </div>
               </div>
             </div>
@@ -40,9 +40,6 @@
       <img class="screenImg" alt="plume1" src="{{showScreen?.fileName}}" width="auto" height="600"/>
       <div class="screenTitle">{{ showScreen?.description }}</div>
   </div>
-
-
-
 </main>
 
 

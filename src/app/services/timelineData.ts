@@ -47,6 +47,14 @@ export const timelinedata: jobItemType[] = [
       location: 'Sunnyvale, CA',
       start: '2016',
       end: '2018',
+      details: [
+        'Developed customer facing SAAS marketing application',
+        'Architect stack and structure for complex Angular Material web applications',
+        'Integrate third party components for ui, security and visualization (D3)',
+        'Resolve tickets with legacy code base during upgrade cycle',
+        'Build team of front end developers, and mentor junior developers'
+
+      ],
       screenshots: [
         { fileName:'assets/img/a1-2.png',
           description:'desc1'
@@ -68,6 +76,13 @@ export const timelinedata: jobItemType[] = [
       location: 'Redwood City, CA',
       start: '2015',
       end: '2016',
+      details: [
+        'Developed web applications for SAAS gamification platform',
+        'Migrated legacy code from PHP stack to Angular with bootstrap',
+        'Integrated Kendo chart library for analytic modules',
+        'Developed complex user facing control panel components',
+        'Mentored junior team members',
+      ],
       screenshots: [
         { fileName:'assets/img/bv0.jpg',
           description:'desc1'
@@ -88,18 +103,28 @@ export const timelinedata: jobItemType[] = [
     company: 'Contracts',
     jobTitle: 'IOT Developer',
     location: 'Denver, CO',
-    start: '2014',
-    end: '2010',
+    start: '2010',
+    end: '2014',
+    details: [
+      'Hardware prototyping, embedded development, responsive web design',
+      'Embedded linux development, industrial control',
+      'Integration of realtime data to video overlay for sports broadcast',
+      'Internet TV development for hospitality vertical'
+    ],
     screenshots: [
       { fileName:'assets/img/adrGarage.png',
-        description:'desc1'
+        description:'Graphics Generation for Live Sports Broadcast'
       },
       { fileName:'assets/img/beerlog.png',
-        description:'desc1'
+        description:'Beerlog: Keg Flow and Status Monitoring'
       },
       { fileName:'assets/img/simulcare.png',
-        description:'desc1'
-      }
+        description:'Simulcare II: Mobile Controlled Therapy Device'
+      },
+      { fileName:'assets/img/roomlinx.png',
+        description:'Roomlinx: Internet and POS integrated internet TV.'
+      },
+
     ]
   }
   ];

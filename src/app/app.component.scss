@@ -15,6 +15,9 @@ body {
 
   .timeline {
     .timeline-item {
+        cursor: pointer;
+
+
       .timeline-card {
         display: inline-flex;
         margin-bottom: 1rem;
@@ -54,6 +57,7 @@ body {
         .screenshots
         {
           display: inline-flex;
+          padding: 0;
           .screenshot {
             cursor: pointer;
             padding: 0.5rem;
@@ -63,6 +67,10 @@ body {
             .screenDescription {
               font-size: 0.8rem;
             }
+          }
+          .screenshot:first-child
+          {
+            padding-left: 1rem;
           }
         }
 
