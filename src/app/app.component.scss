@@ -1,12 +1,12 @@
 body {
   background-color: #f0f0f0;
   color: #202020;
+
 }
 
 .content {
-  font-family: Noto Sans, sans-serif;
   padding: 1rem;
-
+  font-family: "Gill Sans", sans-serif;
   .pageTitle {
     font-size: 1.4rem;
     font-weight: bold;
@@ -22,7 +22,6 @@ body {
         display: inline-flex;
         margin-bottom: 1rem;
         width: 100%;
-        max-width: 1200px;
 
         .job-summary {
           display:inline-block;
@@ -77,22 +76,25 @@ body {
       }
     }
   }
-}
-.modal {
-  cursor: pointer;
-  background: #f0f0f0;
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
-  text-align: center;
 
-  .screenImg {
-    padding-top: 1rem;
-  }
+  .modal {
+    cursor: pointer;
+    background: #f0f0f0;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    text-align: center;
 
-  .screenTitle {
-    padding-top: 0.5rem;
+    .screenImg {
+      padding-top: 1rem;
+    }
+
+    .screenTitle {
+      font-size: 1rem;
+      padding-top: 0.5rem;
+    }
   }
 }
+

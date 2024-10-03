@@ -24,15 +24,6 @@ export const timelinedata: jobItemType[] = [
         { fileName:'assets/img/plume4.png',
           description:'desc4'
         },
-        { fileName:'assets/img/plume5.png',
-          description:'desc5'
-        },
-        { fileName:'assets/img/plume6.png',
-          description:'desc6'
-        },
-        { fileName:'assets/img/plume7.png',
-          description:'desc7'
-        },
         { fileName:'assets/img/plume8.png',
           description:'desc8'
         },
@@ -56,17 +47,17 @@ export const timelinedata: jobItemType[] = [
 
       ],
       screenshots: [
-        { fileName:'assets/img/a1-2.png',
-          description:'desc1'
+        { fileName:'assets/img/a1-1.png',
+          description:'File system for server side marketing campaigns'
         },
-        { fileName:'assets/img/a1-4.png',
-          description:'desc1'
+        { fileName:'assets/img/a1-2.png',
+          description:'Marketing campaign segment generator for end users'
         },
         { fileName:'assets/img/a1-3.png',
-          description:'desc1'
+          description:'Web container designer for end users to lay out advertising assets'
         },
-        { fileName:'assets/img/a1-1.png',
-          description:'desc1'
+        { fileName:'assets/img/a1-4.png',
+          description:'SQL query builder for marketers to create targeting rules'
         }
       ]
     },
@@ -85,16 +76,16 @@ export const timelinedata: jobItemType[] = [
       ],
       screenshots: [
         { fileName:'assets/img/bv0.jpg',
-          description:'desc1'
+          description:'Gamification design wizard for end users to configure rules and rewards'
         },
         { fileName:'assets/img/bv1.jpg',
-          description:'desc1'
+          description:'API driven tree component used to configure game settings.'
         },
         { fileName:'assets/img/bv2.jpg',
-          description:'desc1'
+          description:'Reconfigurable dashboards enable selecting of over time data sets',
         },
         { fileName:'assets/img/bv3.jpg',
-          description:'desc1'
+          description:'Complex multidimensional charting across reconfigurable metrics'
         }
 
       ]
