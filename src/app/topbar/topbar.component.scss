@@ -3,10 +3,12 @@
   display: inline-flex;
   margin-bottom: 1rem;
   width: 100%;
-  background-color: red;
+  text-transform: uppercase;
   .menu-item {
     padding: 0.5rem;
     width: 100%;
+    text-align: center;
+    cursor: pointer;
     &.itemSelected {
       background-color: darkgray;
     }
@@ -15,8 +17,7 @@
     }
   }
   &:not(:last-child) {
-    margin-right: 0.5rem;
-
+    margin-right: 0.25rem;
   }
 
 }

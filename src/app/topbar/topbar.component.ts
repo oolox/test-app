@@ -16,6 +16,11 @@ export class TopbarComponent {
   @Input() title: string = "";
 
    menuItems: menuItem[] = [
+     {
+       label: 'skills',
+       action: 'skills',
+       selected: true
+     },
     {
       label: 'experience',
       action: 'experience',
