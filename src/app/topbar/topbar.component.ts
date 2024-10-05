@@ -28,9 +28,9 @@ export class TopbarComponent {
       selected: this.selected === 'SKILLS'
     },
     {
-      label: 'email',
-      action: 'EMAIL',
-      selected: this.selected === 'EMAIL'
+      label: 'contact',
+      action: 'CONTACT',
+      selected: this.selected === 'CONTACT'
     },
     {
       label: 'resume',
