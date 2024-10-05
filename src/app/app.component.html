@@ -4,7 +4,7 @@
       {{title}}
     </div>
 
-    <app-topbar [title]="title" [value]="50"></app-topbar>
+    <app-topbar (menuSelect)="menuSelect($event)"></app-topbar>
 
     <div class="timeline">
       <div *ngFor="let job of timeline" class="timeline-item">

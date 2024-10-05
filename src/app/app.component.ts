@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import {jobItemType, screenshotType} from "./app.types";
+import {jobItemType, menuItem, screenshotType} from "./app.types";
 import {timelinedata,titlestr} from "./services/timelineData";
 import {TopbarComponent} from "./topbar/topbar.component";
 
@@ -23,6 +23,10 @@ export class AppComponent {
 
   selectItem(item:jobItemType) {
     item.selected=!item.selected;
+  }
+
+  menuSelect(action: string) {
+    console.log("menuSelect: ",action);
   }
 
   onEvent(event:Event, item:screenshotType) {

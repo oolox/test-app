@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, Output,EventEmitter } from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {menuItem} from '../app.types';
 
@@ -12,8 +12,7 @@ import {menuItem} from '../app.types';
 
 
 export class TopbarComponent {
-  @Input() value = 0;
-  @Input() title: string = "";
+  @Output() menuSelect = new EventEmitter<string>();
 
    menuItems: menuItem[] = [
      {
@@ -39,7 +38,7 @@ export class TopbarComponent {
   topbarClick(item: menuItem) {
     this.menuItems.forEach( (item:menuItem) => { item.selected=false })
     item.selected = true;
-    console.log("clicked: ",item);
+    this.menuSelect.emit(item.action);
   }
 
 }
