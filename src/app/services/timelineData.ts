@@ -1,9 +1,5 @@
 import {jobItemType} from "../app.types";
 
-export const titlestr = 'Paul Cousineau';
-
-
-
 export const timelinedata: jobItemType[] = [
     {
       company: 'Plume',

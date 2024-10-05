@@ -1,4 +1,7 @@
 import { Component, OnInit} from '@angular/core';
+import { skillsItemType} from "../app.types";
+import { skillsData } from "../services/skillsData";
+
 import Chart from 'chart.js';
 
 @Component({
@@ -11,19 +14,24 @@ import Chart from 'chart.js';
 export class SkillsComponent implements OnInit {
 
   public chart: any;
+  procData: any;
+
+  processData(): void {
+    this.procData=skillsData;
+  }
 
   createChart(){
-
+    console.log(skillsData);
 
     const data = {
       labels: ['2022-05-10', '2022-05-11', '2022-05-12','2022-05-13',
         '2022-05-14', '2022-05-15', '2022-05-16','2022-05-17', ],
       datasets: [
         {
-          label: "Sales",
+          label: "Languages",
           data: [20,30,40,50],
-          backgroundColor: 'blue'
-        }
+          backgroundColor: ["red", "blue", "green", "blue", "red", "blue"],
+        },
       ]
     }
 
@@ -42,15 +50,21 @@ export class SkillsComponent implements OnInit {
               max: 100
             }
           }]
+        },
+        legend: {
+          display: false
+        },
+        tooltips: {
+          enabled: false
         }
+      },
 
-      }
 
     });
   }
 
   ngOnInit() {
-    console.log('CHART');
+    this.processData();
     this.createChart();
   }
 

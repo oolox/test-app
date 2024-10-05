@@ -11,6 +11,12 @@ export interface jobItemType {
   details?: string[];
 }
 
+export interface skillsItemType {
+    label: string;
+    type: string;
+    rating: number;
+}
+
 export interface screenshotType {
   fileName: string;
   description: string;
