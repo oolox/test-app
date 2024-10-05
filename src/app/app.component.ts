@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import {jobItemType, screenshotType} from "./app.types";
 import {timelinedata,titlestr} from "./services/timelineData";
+import {TopbarComponent} from "./topbar/topbar.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, CommonModule, TopbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -25,7 +26,6 @@ export class AppComponent {
   }
 
   onEvent(event:Event, item:screenshotType) {
-    console.log('screenshotType: ',item);
     this.showModal=true;
     this.showScreen= item;
     event.stopPropagation();

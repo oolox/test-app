@@ -1,0 +1,10 @@
+<p>topbar works: {{value}} : {{title}}</p>
+<div class="topbar">
+  <div *ngFor="let item of menuItems" class="topbar" (click)="topbarClick(item)">
+      <div class="menu-item" [ngClass]="item.selected ? 'itemSelected' : 'itemNotSelected'">
+        {{item.label}}
+      </div>
+  </div>
+
+</div>
+

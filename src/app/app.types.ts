@@ -14,3 +14,8 @@ export interface screenshotType {
   description: string;
 }
 
+export interface menuItem {
+  label: string;
+  action: string;
+  selected?: boolean;
+}

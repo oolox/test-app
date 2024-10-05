@@ -3,19 +3,25 @@
     <div class="pageTitle">
       {{title}}
     </div>
+
+    <app-topbar [title]="title" [value]="50"></app-topbar>
+
     <div class="timeline">
       <div *ngFor="let job of timeline" class="timeline-item">
         <div class="timeline-card" (click)="selectItem(job)">
           <div class="job-summary">
-            <div class="title">
-              {{ job.company }}
-            </div>
-            <div class="subtitle">
-              {{ job.location }}
-            </div>
-            <div class="info">
-              {{ job.jobTitle }} ({{ job.start }} - {{ job.end }})
-            </div>
+              <div>
+                <div class="title">
+                  {{ job.company }}
+                </div>
+                <div class="subtitle">
+                  {{ job.location }}
+                </div>
+                <div class="info">
+                  {{ job.jobTitle }} ({{ job.start }} - {{ job.end }})
+                </div>
+              </div>
+
           </div>
           <div class="job-details">
             <ul>
@@ -34,8 +40,6 @@
         </div>
       </div>
     </div>
-
-
     <div class="modal" *ngIf="showModal" (click)="showModal=false">
         <img class="screenImg" alt="plume1" src="{{showScreen?.fileName}}" width="auto" height="600"/>
         <div class="screenTitle">{{ showScreen?.description }}</div>

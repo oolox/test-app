@@ -1,7 +1,6 @@
 body {
-  background-color: #f0f0f0;
+  background-color: #d0d0d0;
   color: #202020;
-
 }
 
 .content {
@@ -16,13 +15,10 @@ body {
   .timeline {
     .timeline-item {
         cursor: pointer;
-
-
       .timeline-card {
         display: inline-flex;
         margin-bottom: 1rem;
         width: 100%;
-
         .job-summary {
           display:inline-block;
           padding: 1rem;
@@ -30,7 +26,6 @@ body {
           border: 1px solid darkgray;
           border-radius: 1rem 0 0 1rem;
           width: 33%;
-
           .title {
             font-size: 1.2rem;
             font-weight: bold;
@@ -42,7 +37,6 @@ body {
           .info {
             font-size: 0.8rem;
           }
-
         }
         .job-details {
           display:inline-block;
@@ -50,8 +44,6 @@ body {
           background-color: darkgray;
           border-radius: 0 1rem 1rem 0;
           width: 67%;
-
-
         }
         .screenshots
         {
@@ -60,9 +52,6 @@ body {
           .screenshot {
             cursor: pointer;
             padding: 0.5rem;
-            .screenImg {
-
-            }
             .screenDescription {
               font-size: 0.8rem;
             }
@@ -72,7 +61,6 @@ body {
             padding-left: 1rem;
           }
         }
-
       }
     }
   }
@@ -86,7 +74,6 @@ body {
     left: 0%;
     right: 0%;
     text-align: center;
-
     .screenImg {
       padding-top: 1rem;
     }
@@ -97,4 +84,3 @@ body {
     }
   }
 }
-
