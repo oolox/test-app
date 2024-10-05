@@ -1,6 +1,6 @@
-import {Component, Input, Output,EventEmitter } from '@angular/core';
+import {Component, Output, EventEmitter, Input} from '@angular/core';
 import {CommonModule} from "@angular/common";
-import {menuItem} from '../app.types';
+import {menuItem, screenName} from '../app.types';
 
 @Component({
   selector: 'app-topbar',
@@ -12,31 +12,37 @@ import {menuItem} from '../app.types';
 
 
 export class TopbarComponent {
-  @Output() menuSelect = new EventEmitter<string>();
+  @Output() menuSelect = new EventEmitter<screenName>();
+  @Input() selected:screenName = 'TIMELINE';
 
-   menuItems: menuItem[] = [
-     {
-       label: 'skills',
-       action: 'skills',
-       selected: true
-     },
+  menuItems: menuItem[] = [
+
     {
-      label: 'experience',
-      action: 'experience',
-      selected: true
+      label: 'timeline',
+      action: 'TIMELINE',
+      selected: this.selected === 'TIMELINE'
+    },
+    {
+      label: 'skills',
+      action: 'SKILLS',
+      selected: this.selected === 'SKILLS'
     },
     {
       label: 'email',
-      action: 'email'
+      action: 'EMAIL',
+      selected: this.selected === 'EMAIL'
     },
     {
       label: 'resume',
-      action: 'resume'
+      action: 'RESUME',
+      selected: this.selected === 'RESUME'
     }
   ];
 
   topbarClick(item: menuItem) {
-    this.menuItems.forEach( (item:menuItem) => { item.selected=false })
+    this.menuItems.forEach((item: menuItem) => {
+      item.selected = false
+    })
     item.selected = true;
     this.menuSelect.emit(item.action);
   }

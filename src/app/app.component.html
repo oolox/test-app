@@ -1,49 +1,7 @@
 <main class="main">
   <div class="content">
-    <div class="pageTitle">
-      {{title}}
-    </div>
-
-    <app-topbar (menuSelect)="menuSelect($event)"></app-topbar>
-
-    <div class="timeline">
-      <div *ngFor="let job of timeline" class="timeline-item">
-        <div class="timeline-card" (click)="selectItem(job)">
-          <div class="job-summary">
-              <div>
-                <div class="title">
-                  {{ job.company }}
-                </div>
-                <div class="subtitle">
-                  {{ job.location }}
-                </div>
-                <div class="info">
-                  {{ job.jobTitle }} ({{ job.start }} - {{ job.end }})
-                </div>
-              </div>
-
-          </div>
-          <div class="job-details">
-            <ul>
-              <li *ngFor="let detail of job.details">
-                {{detail}}
-              </li>
-            </ul>
-            <div *ngIf="job.selected">
-              <div *ngFor="let screen of job.screenshots" class="screenshots" >
-                <div class="screenshot" (click)="onEvent($event,screen)">
-                  <img alt="{{screen.description}}" class="screenImg" alt="plume1" src="{{screen.fileName}}" height="100" width="120"/>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal" *ngIf="showModal" (click)="showModal=false">
-        <img class="screenImg" alt="plume1" src="{{showScreen?.fileName}}" width="auto" height="600"/>
-        <div class="screenTitle">{{ showScreen?.description }}</div>
-    </div>
+    <app-topbar [selected]="selectedPage" (menuSelect)="menuSelect($event)"></app-topbar>
+    <app-timeline *ngIf="selectedPage=='TIMELINE'"></app-timeline>
   </div>
 </main>
 

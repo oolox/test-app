@@ -1,39 +1,27 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import {jobItemType, menuItem, screenshotType} from "./app.types";
-import {timelinedata,titlestr} from "./services/timelineData";
 import {TopbarComponent} from "./topbar/topbar.component";
+import {TimelineComponent} from "./timeline/timeline.component";
+import {screenName} from "./app.types";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, TopbarComponent],
+  imports: [RouterOutlet, CommonModule, TopbarComponent, TimelineComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 
 export class AppComponent {
 
+  selectedPage:screenName= 'TIMELINE';
 
-  timeline = timelinedata;
-  title:string= titlestr;
-  showModal:boolean= false;
-  showScreen:screenshotType | null= null;
-
-  selectItem(item:jobItemType) {
-    item.selected=!item.selected;
+  menuSelect(action: screenName) {
+    console.log("app.menuSelect=> ",action);
+    this.selectedPage = action;
   }
 
-  menuSelect(action: string) {
-    console.log("menuSelect: ",action);
-  }
-
-  onEvent(event:Event, item:screenshotType) {
-    this.showModal=true;
-    this.showScreen= item;
-    event.stopPropagation();
-  }
 
 }
 

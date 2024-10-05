@@ -1,3 +1,5 @@
+export type screenName = 'TIMELINE' | 'SKILLS' | 'EMAIL' | 'RESUME';
+
 export interface jobItemType {
   company: string;
   jobTitle: string;
@@ -16,6 +18,8 @@ export interface screenshotType {
 
 export interface menuItem {
   label: string;
-  action: string;
+  action: screenName;
   selected?: boolean;
 }
+
+
