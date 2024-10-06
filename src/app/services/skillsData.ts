@@ -13,7 +13,7 @@ export const skillsData: skillsItemType[] = [
   { label: 'GraphQL APIS', type: 'Integrations', rating: 7 },
   { label: 'D3', type: 'Integrations', rating: 6 },
   { label: 'ChartJs', type: 'Integrations', rating: 8 },
-  { label: 'Kendo / Highchrats', type: 'Integrations', rating: 5 },
+  { label: 'Kendo / Highcharts', type: 'Integrations', rating: 5 },
   { label: 'SSO (Okta/Google)', type: 'Integrations', rating: 6 },
   { label: 'Mapbox/Google Maps', type: 'Integrations', rating: 6 },
   { label: 'AWS web services', type: 'Integrations', rating: 7 },

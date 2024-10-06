@@ -1,7 +1,14 @@
 
 <div class="skills">
   <div class="chart-controls">
-    CONTROLS
+    Categories
+    <div *ngFor="let skill of skillType; let  id = index">
+      <div class='radio-select' [ngStyle]="{'background-color': colorLUT[id]}" (click)="filterSelect(skill)">
+        {{skill}}
+      </div>
+    </div>
+
+
   </div>
   <div class="chart-container">
     <canvas  id="skillsChart" >{{ chart }}</canvas>

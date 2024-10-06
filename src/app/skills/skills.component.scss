@@ -3,6 +3,7 @@
 
   .chart-controls {
     flex: 0.25;
+
   }
   .chart-container {
     padding-left: 1rem;
@@ -12,4 +13,12 @@
     flex: 0.75;
   }
 
+  .radio-select {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    width: 8rem;
+    color: lightgray;
+    cursor: pointer;
+  }
 }
