@@ -18,6 +18,11 @@ export class TopbarComponent {
   menuItems: menuItem[] = [
 
     {
+      label: 'overview',
+      action: 'OVERVIEW',
+      selected: this.selected === 'OVERVIEW'
+    },
+    {
       label: 'timeline',
       action: 'TIMELINE',
       selected: this.selected === 'TIMELINE'
@@ -28,15 +33,12 @@ export class TopbarComponent {
       selected: this.selected === 'SKILLS'
     },
     {
-      label: 'contact',
-      action: 'CONTACT',
-      selected: this.selected === 'CONTACT'
+      label: 'links',
+      action: 'LINKS',
+      selected: this.selected === 'LINKS'
     },
-    {
-      label: 'resume',
-      action: 'RESUME',
-      selected: this.selected === 'RESUME'
-    }
+
+
   ];
 
   topbarClick(item: menuItem) {

@@ -12,9 +12,6 @@ import Chart from 'chart.js';
   styleUrl: './skills.component.scss'
 })
 
-
-
-
 export class SkillsComponent implements OnInit {
 
   public chart: any;
@@ -113,4 +110,5 @@ export class SkillsComponent implements OnInit {
     this.updateData();
   }
 
+  protected readonly skillsData = skillsData;
 }

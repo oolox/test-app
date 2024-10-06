@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {timelinedata } from "../services/timelineData";
 import {jobItemType, screenshotType} from "../app.types";
-import {NgForOf, NgIf, NgStyle} from "@angular/common";
+import {JsonPipe, NgForOf, NgIf, NgStyle} from "@angular/common";
 
 @Component({
   selector: 'app-timeline',
@@ -9,7 +9,8 @@ import {NgForOf, NgIf, NgStyle} from "@angular/common";
   imports: [
     NgForOf,
     NgIf,
-    NgStyle
+    NgStyle,
+    JsonPipe
   ],
   templateUrl: './timeline.component.html',
   styleUrl: './timeline.component.scss'
