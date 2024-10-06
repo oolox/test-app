@@ -16,21 +16,35 @@ export class SkillsComponent implements OnInit {
   public chart: any;
   procData: any;
 
-  processData(): void {
-    this.procData=skillsData;
+  getLabels(): string[] {
+    return this.procData.map((skill:skillsItemType) => skill.label);
+  }
+
+  getData(): number[] {
+    return this.procData.map((skill:skillsItemType) => skill.rating);
+  }
+
+  getColors(): string[] {
+    const colorLUT: string[] = [ '#204080','#208040','#804020','#802040' ];
+    return this.procData.map((skill:skillsItemType) => {
+        switch (skill.type) {
+          case 'Languages': return colorLUT[0];
+          case 'Integrations': return colorLUT[1];
+          case 'Skills': return colorLUT[2];
+          default: return colorLUT[0];
+        }
+    });
   }
 
   createChart(){
-    console.log(skillsData);
-
+    console.log(this.getColors());
     const data = {
-      labels: ['2022-05-10', '2022-05-11', '2022-05-12','2022-05-13',
-        '2022-05-14', '2022-05-15', '2022-05-16','2022-05-17', ],
+      labels: this.getLabels(),
       datasets: [
         {
-          label: "Languages",
-          data: [20,30,40,50],
-          backgroundColor: ["red", "blue", "green", "blue", "red", "blue"],
+          barThickness: 18,
+          data: this.getData(),
+          backgroundColor: this.getColors(),
         },
       ]
     }
@@ -40,14 +54,16 @@ export class SkillsComponent implements OnInit {
 
       data: data,
       options: {
-        aspectRatio:2.5,
+        responsive: true,
+        maintainAspectRatio: false,
+
         scales: {
          xAxes: [{
             display: true,
             ticks: {
               suggestedMin: 0,
               beginAtZero: true,
-              max: 100
+              max: 10
             }
           }]
         },
@@ -64,7 +80,7 @@ export class SkillsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.processData();
+    this.procData=skillsData;
     this.createChart();
   }
 
