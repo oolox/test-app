@@ -25,13 +25,13 @@ export class SkillsComponent implements OnInit {
   }
 
   getColors(): string[] {
-    const colorLUT: string[] = [ '#204080','#208040','#804020','#802040' ];
+    const colorLUT: string[] = [ '#206080','#208060','#802060','#806020' ];
     return this.procData.map((skill:skillsItemType) => {
         switch (skill.type) {
           case 'Languages': return colorLUT[0];
           case 'Integrations': return colorLUT[1];
           case 'Skills': return colorLUT[2];
-          default: return colorLUT[0];
+          default: return colorLUT[3];
         }
     });
   }
@@ -42,7 +42,7 @@ export class SkillsComponent implements OnInit {
       labels: this.getLabels(),
       datasets: [
         {
-          barThickness: 18,
+          barThickness: 14,
           data: this.getData(),
           backgroundColor: this.getColors(),
         },

@@ -1,4 +1,15 @@
-.chart-container {
-  width:600px;
-  height:500px;
+.skills {
+  display: inline-flex;
+
+  .chart-controls {
+    flex: 0.25;
+  }
+  .chart-container {
+    padding-left: 1rem;
+    padding-top: 0rem;
+    width:600px;
+    height:600px;
+    flex: 0.75;
+  }
+
 }
