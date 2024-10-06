@@ -37,8 +37,6 @@ export class SkillsComponent implements OnInit {
     return this.procData.map((skill:skillsItemType) => skill.rating);
   }
 
-
-
   getColors(): string[] {
     return this.procData.map((skill:skillsItemType) => {
         switch (skill.type) {
@@ -97,8 +95,6 @@ export class SkillsComponent implements OnInit {
           enabled: false
         }
       },
-
-
     });
   }
 
