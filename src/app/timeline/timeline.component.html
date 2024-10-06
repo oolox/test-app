@@ -36,17 +36,16 @@
   </div>
 </div>
 
-<!--
 
-<code style="font-size: 0.6rem">
-  <pre>{{timeline | json}}</pre>
-</code>
+<div style="max-height: 400px;height: 400px;background-color: #404080;color:lightgray;overflow-y: scroll">
+  <code style="font-size: 0.6rem">
+    <pre>{{timeline | json}}</pre>
+  </code>
+</div>
 
--->
 
 
 <div class="modal" *ngIf="showModal" (click)="showModal=false">
   <img class="screenImg" alt="plume1" src="{{showScreen?.fileName}}" width="auto" height="600"/>
-
   <div class="screenTitle">{{ showScreen?.description }}</div>
 </div>

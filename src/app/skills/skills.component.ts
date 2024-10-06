@@ -3,6 +3,7 @@ import { skillsItemType,filterType} from "../app.types";
 import { skillsData } from "../services/skillsData";
 import { CommonModule  } from '@angular/common';
 import Chart from 'chart.js';
+import {timelinedata} from "../services/timelineData";
 
 @Component({
   selector: 'app-skills',
@@ -111,4 +112,5 @@ export class SkillsComponent implements OnInit {
   }
 
   protected readonly skillsData = skillsData;
+  protected readonly timeline = timelinedata;
 }
