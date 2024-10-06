@@ -61,7 +61,7 @@ export class SkillsComponent implements OnInit {
       labels: this.getLabels(),
       datasets: [
         {
-          barThickness: 14,
+          barThickness: 12,
           data: this.getData(),
           backgroundColor: this.getColors(),
         },

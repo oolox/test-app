@@ -23,7 +23,7 @@ export class TopbarComponent {
       selected: this.selected === 'OVERVIEW'
     },
     {
-      label: 'timeline',
+      label: 'experience',
       action: 'TIMELINE',
       selected: this.selected === 'TIMELINE'
     },
