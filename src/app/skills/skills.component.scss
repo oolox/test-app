@@ -20,5 +20,12 @@
     width: 8rem;
     color: lightgray;
     cursor: pointer;
+
+    &.radio-enable {
+      opacity: 1;
+    }
+    &.radio-disable {
+      opacity: 0.5;
+    }
   }
 }

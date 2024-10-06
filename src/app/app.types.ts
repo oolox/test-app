@@ -28,3 +28,8 @@ export interface menuItem {
   selected?: boolean;
 }
 
+export interface filterType {
+  label: string;
+  color: string;
+  enabled: boolean;
+}

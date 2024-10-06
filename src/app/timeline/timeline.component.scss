@@ -9,8 +9,7 @@
         display:inline-block;
         padding: 1rem;
         background-color: lightgray;
-        border: 1px solid darkgray;
-        border-radius: 1rem 0 0 1rem;
+        //border-left: 12px solid red;
         width: 33%;
         .title {
           font-size: 1.2rem;
@@ -27,8 +26,8 @@
       .job-details {
         display:inline-block;
         padding-right: 1rem;
+        font-size: 0.8rem;
         background-color: darkgray;
-        border-radius: 0 1rem 1rem 0;
         width: 67%;
       }
       .screenshots
