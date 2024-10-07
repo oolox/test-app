@@ -7,24 +7,32 @@ export const timelinedata: jobItemType[] = [
       jobTitle: 'Lead Front End Developer',
       start: '2018',
       end: '2024',
+      details: [
+        'Development of multiple B2B applications to support SAS network optimization.',
+        'Created complex visualizations, controls and features in Angular and React',
+        'Drove adoption of standards and methods to optimize development process.',
+        'Design, develop and maintain network operations center used by global telecom companies.',
+        'Work across internal teams to define and create features and products. (API/Product/Design/QA)',
+        'Oversaw growth of team from 1 to 12+ members; creating a high performance team.',
+      ],
       screenshots: [
         { fileName:'assets/img/plume1.png',
-          description:'desc1'
+          description:'Realtime network topology via socket, rendered with D3 as a force graph.'
         },
         { fileName:'assets/img/plume2.png',
-          description:'desc2'
+          description:'Reconfigurable, interactive health check tool used by technicians.'
         },
         { fileName:'assets/img/plume3.png',
-          description:'desc3'
+          description:'Detailed time domain graphs driven by graphQL and hardware abstraction APIs.'
         },
         { fileName:'assets/img/plume4.png',
-          description:'desc4'
+          description:'Visual diagnostic tools for technicians to optimize network locations.'
         },
         { fileName:'assets/img/plume8.png',
-          description:'desc8'
+          description:'Timeline data via REST reports specific metrics over time.'
         },
         { fileName:'assets/img/plume9.png',
-          description:'desc9'
+          description:'Integrated Dashboard latched by user permissions, used by T1 at customer locations.'
         }
       ]
     },
