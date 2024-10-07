@@ -2,7 +2,7 @@ import {jobItemType} from "../app.types";
 
 export const timelinedata: jobItemType[] = [
     {
-      company: 'Plume',
+      company: 'Plume Design',
       location: 'Palo Alto, CA',
       jobTitle: 'Lead Front End Developer',
       start: '2018',
@@ -47,7 +47,7 @@ export const timelinedata: jobItemType[] = [
         'Architect stack and structure for complex Angular Material web applications',
         'Integrate third party components for ui, security and visualization (D3)',
         'Resolve tickets with legacy code base during upgrade cycle',
-        'Build team of front end developers, and mentor junior developers'
+        'Built team of front end developers, and mentored junior developers'
 
       ],
       screenshots: [
