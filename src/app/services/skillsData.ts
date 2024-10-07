@@ -27,12 +27,10 @@ export const skillsData: skillsItemType[] = [
   { label: 'Asset Management', type: 'Development', rating: 9 },
   { label: 'Testing / QA', type: 'Development', rating: 6 },
   { label: 'Standards and Protocols', type: 'Development', rating: 9 },
-  { label: 'Github / Jira', type: 'Tools', rating: 7 },
+  { label: 'Github / Jira', type: 'Tools', rating: 9 },
   { label: 'Deployment / Heroku', type: 'Tools', rating: 7 },
   { label: 'Figma / Adobe', type: 'Tools', rating: 6 },
-  { label: 'Curl / Postman', type: 'Tools', rating: 7 },
-  { label: 'Requestly', type: 'Tools', rating: 9 },
+  { label: 'Curl / Postman', type: 'Tools', rating: 8 },
   { label: 'Google Suite', type: 'Tools', rating: 7 },
-
 ] || null;
 

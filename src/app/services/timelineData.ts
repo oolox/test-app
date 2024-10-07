@@ -23,7 +23,7 @@ export const timelinedata: jobItemType[] = [
           description:'Reconfigurable, interactive health check tool used by technicians.'
         },
         { fileName:'assets/img/plume3.png',
-          description:'Detailed time domain graphs driven by graphQL and hardware abstraction APIs.'
+          description:'Detailed time domain graphs driven by APIs and realtime data.'
         },
         { fileName:'assets/img/plume4.png',
           description:'Visual diagnostic tools for technicians to optimize network locations.'
