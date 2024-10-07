@@ -13,7 +13,7 @@ import {menuItem, screenName} from '../app.types';
 
 export class TopbarComponent {
   @Output() menuSelect = new EventEmitter<screenName>();
-  @Input() selected:screenName = 'TIMELINE';
+  @Input() selected:screenName = 'OVERVIEW';
 
   menuItems: menuItem[] = [
 
@@ -23,14 +23,14 @@ export class TopbarComponent {
       selected: this.selected === 'OVERVIEW'
     },
     {
-      label: 'experience',
-      action: 'TIMELINE',
-      selected: this.selected === 'TIMELINE'
-    },
-    {
       label: 'skills',
       action: 'SKILLS',
       selected: this.selected === 'SKILLS'
+    },
+    {
+      label: 'experience',
+      action: 'TIMELINE',
+      selected: this.selected === 'TIMELINE'
     },
     {
       label: 'links',

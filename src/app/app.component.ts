@@ -21,7 +21,7 @@ import {screenName} from "./app.types";
 })
 
 export class AppComponent {
-  selectedPage:screenName= 'TIMELINE';
+  selectedPage:screenName= 'OVERVIEW';
   menuSelect(action: screenName) {
     this.selectedPage = action;
   }
