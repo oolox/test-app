@@ -16,7 +16,6 @@ export class TopbarComponent {
   @Input() selected:screenName = 'OVERVIEW';
 
   menuItems: menuItem[] = [
-
     {
       label: 'overview',
       action: 'OVERVIEW',
@@ -32,8 +31,6 @@ export class TopbarComponent {
       action: 'TIMELINE',
       selected: this.selected === 'TIMELINE'
     }
-
-
   ];
 
   topbarClick(item: menuItem) {

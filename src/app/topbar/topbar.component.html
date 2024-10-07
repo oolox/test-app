@@ -21,8 +21,6 @@
 
     </div>
   </div>
-
-
   <div class="menu-bar">
     <div *ngFor="let item of menuItems" class="menu-items" (click)="topbarClick(item)">
         <div class="menu-item" [ngClass]="item.selected ? 'itemSelected' : 'itemNotSelected'">

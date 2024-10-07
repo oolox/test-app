@@ -1,9 +1,7 @@
-
 <div class="timeline">
   <div *ngFor="let job of timeline; index as id" class="timeline-item">
     <div class="timeline-card" (click)="selectItem(job)"
-         [ngStyle]="{'border-left': '12px solid '+colorLUT[id]}"
-    >
+         [ngStyle]="{'border-left': '12px solid '+colorLUT[id]}">
       <div class="job-summary">
         <div>
           <div class="title">
