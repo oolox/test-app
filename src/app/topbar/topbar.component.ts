@@ -31,12 +31,7 @@ export class TopbarComponent {
       label: 'experience',
       action: 'TIMELINE',
       selected: this.selected === 'TIMELINE'
-    },
-    {
-      label: 'links',
-      action: 'LINKS',
-      selected: this.selected === 'LINKS'
-    },
+    }
 
 
   ];
