@@ -56,7 +56,7 @@ export class SkillsComponent implements OnInit {
     {
       this.chart.destroy();
     }
-
+    console.log(this.getLabels());
     const data = {
       labels: this.getLabels(),
       datasets: [

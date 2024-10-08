@@ -37,7 +37,7 @@ export const timelinedata: jobItemType[] = [
       ]
     },
     {
-      company: 'AgileOne',
+      company: 'AgilOne',
       jobTitle: 'Lead Front End Developer',
       location: 'Sunnyvale, CA',
       start: '2016',
