@@ -3,6 +3,7 @@ import {jobItemType} from "../app.types";
 export const timelinedata: jobItemType[] = [
     {
       company: 'Plume Design',
+      link: 'https://www.linkedin.com/company/plume-wifi/',
       location: 'Palo Alto, CA',
       jobTitle: 'Lead Front End Developer',
       start: '2018',
@@ -38,6 +39,7 @@ export const timelinedata: jobItemType[] = [
     },
     {
       company: 'AgilOne',
+      link: 'https://www.linkedin.com/company/agilone/',
       jobTitle: 'Lead Front End Developer',
       location: 'Sunnyvale, CA',
       start: '2016',
@@ -67,6 +69,7 @@ export const timelinedata: jobItemType[] = [
     },
     {
       company: 'Badgeville',
+      link: 'https://www.linkedin.com/company/badgeville/',
       jobTitle: 'Front End Developer',
       location: 'Redwood City, CA',
       start: '2015',

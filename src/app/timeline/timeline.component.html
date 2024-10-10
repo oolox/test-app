@@ -3,9 +3,14 @@
     <div class="timeline-card" (click)="selectItem(job)"
          [ngStyle]="{'border-left': '12px solid '+colorLUT[id]}">
       <div class="job-summary">
-        <div>
+
           <div class="title">
-            {{ job.company }}
+            <div *ngIf="job.link">
+              <a target="_blank" href="{{job.link}}">{{job.company}}</a>
+            </div>
+            <div *ngIf="!job.link">
+              {{ job.company }}
+            </div>
           </div>
           <div class="subtitle">
             {{ job.location }}
@@ -13,7 +18,7 @@
           <div class="info">
             {{ job.jobTitle }} ({{ job.start }} - {{ job.end }})
           </div>
-        </div>
+
 
       </div>
       <div class="job-details">

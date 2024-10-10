@@ -2,6 +2,7 @@ export type screenName = 'TIMELINE' | 'SKILLS' | 'LINKS' | 'OVERVIEW';
 
 export interface jobItemType {
   company: string;
+  link?: string;
   jobTitle: string;
   start: string;
   end: string;
