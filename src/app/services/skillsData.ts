@@ -24,7 +24,7 @@ export const skillsData: skillsItemType[] = [
   { label: 'Graphic Design', type: 'Development', rating: 7 , years: 5 },
   { label: 'Product Design', type: 'Development', rating: 5 , years: 4 },
   { label: 'Hiring / Interviewing', type: 'Development', rating: 10 , years: 6 },
-  { label: 'Asset Management', type: 'Development', rating: 9 , years: 3 },
+  { label: 'Asset Management', type: 'Development', rating: 6 , years: 3 },
   { label: 'Testing / QA', type: 'Development', rating: 6 , years: 3 },
   { label: 'Standards and Protocols', type: 'Development', rating: 9 , years: 10 },
   { label: 'Github / Jira', type: 'Tools', rating: 9 , years: 8 },
