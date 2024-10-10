@@ -63,6 +63,8 @@
   text-align: center;
   .screenImg {
     padding-top: 1rem;
+    width: auto;
+    max-height: 600px;
   }
 
   .screenTitle {
@@ -75,3 +77,11 @@ a {
   color: #202020;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}

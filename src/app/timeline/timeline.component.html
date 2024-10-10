@@ -27,7 +27,7 @@
             {{detail}}
           </li>
         </ul>
-        <div *ngIf="job.selected">
+        <div *ngIf="job.selected" class="fade-in">
           <div *ngFor="let screen of job.screenshots" class="screenshots" >
             <div class="screenshot" (click)="onEvent($event,screen)">
               <img alt="{{screen.description}}" class="screenImg" src="{{screen.fileName}}" height="100" width="120"/>
@@ -41,7 +41,10 @@
 
 
 
-<div class="modal" *ngIf="showModal" (click)="showModal=false">
+<div class="modal fade-in" *ngIf="showModal" (click)="showModal=false">
+  <div class="screenTitle">
+
+
+    {{ showScreen?.description }}</div>
   <img class="screenImg" alt="plume1" src="{{showScreen?.fileName}}" width="75%" height="auto"/>
-  <div class="screenTitle">{{ showScreen?.description }}</div>
 </div>
