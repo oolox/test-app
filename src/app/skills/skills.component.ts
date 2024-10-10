@@ -35,7 +35,11 @@ export class SkillsComponent implements OnInit {
   }
 
   getData(): number[] {
+    if (this.altMetric) {
+      return this.procData.map((skill:skillsItemType) => skill.years);
+    }
     return this.procData.map((skill:skillsItemType) => skill.rating);
+
   }
 
   getColors(): string[] {
