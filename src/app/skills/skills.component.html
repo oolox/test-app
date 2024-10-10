@@ -14,6 +14,9 @@
       </div>
     </div>
     <div class="metric-box">
+      <div class="metric-title">
+          Metric
+      </div>
       <div class="metric-selector">
         <div class='metric-select'
              [ngClass]="!altMetric ? 'metric-enable' : 'metric-disable'"
@@ -28,6 +31,9 @@
           Years
         </div>
       </div>
+
+
+
     </div>
     <div class="metric-description" *ngIf="!altMetric">
       X-Axis is self determined rating of skill from 0-10. I have only include items with 5+ ratings.
@@ -35,7 +41,26 @@
     </div>
     <div class="metric-description" *ngIf="altMetric">
       X-Axis is a estimate of how many years I have worked with, or been exposed to
-      various skills and technologies. This is a rough, self determined estimate, based on exposure and imersion.
+      various skills and technologies. This is a rough, self determined estimate, based on exposure and immersion.
+    </div>
+    <div class="metric-box">
+      <div class="metric-title">
+        Sorting
+      </div>
+      <div class="metric-selector">
+        <div class='metric-select'
+             [ngClass]="!isSort ? 'metric-enable' : 'metric-disable'"
+             (click)="setSort(false)"
+        >
+          Logical
+        </div>
+        <div class='metric-select'
+             [ngClass]="isSort ? 'metric-enable' : 'metric-disable'"
+             (click)="setSort(true)"
+        >
+          By Metric
+        </div>
+      </div>
     </div>
   </div>
   <div class="chart-container">

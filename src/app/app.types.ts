@@ -16,7 +16,7 @@ export interface skillsItemType {
     label: string;
     type: string;
     rating: number;
-    years?: number;
+    years: number;
 }
 
 export interface screenshotType {

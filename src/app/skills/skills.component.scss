@@ -4,10 +4,17 @@
     padding-right: 1rem;
     .metric-box {
       padding: 0.5rem;
-      margin-top: 2rem;
+      margin-top: 1rem;
       font-size: 0.8rem;
       width: 100%;
       background-color: #d0d0d0;
+
+      .metric-title {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+        color: #808080;
+        text-transform: uppercase;
+      }
 
       .metric-selector {
         display: flex;
@@ -37,7 +44,7 @@
 
     .metric-description {
       padding: 0.5rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       color: #808080;
       font-size: 0.8rem;
       width: 100%;
@@ -62,10 +69,11 @@
   }
 
   .chart-container {
+    margin-left: 1rem;
     padding-left: 1rem;
     padding-top: 0rem;
-    width:600px;
-    height:600px;
+    min-width:600px;
+    min-height:600px;
     flex: 0.75;
   }
 }

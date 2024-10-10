@@ -63,13 +63,15 @@
   text-align: center;
   .screenImg {
     padding-top: 1rem;
+    height: auto;
     width: auto;
-    max-height: 600px;
+    max-width: 75%;
+    max-height: 75%;
   }
 
   .screenTitle {
     font-size: 1rem;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
   }
 }
 

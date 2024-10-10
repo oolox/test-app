@@ -28,6 +28,7 @@ export class SkillsComponent implements OnInit {
   ]
 
   altMetric:boolean=false;
+  isSort:boolean=false;
 
 
   getLabels(): string[] {
@@ -39,17 +40,37 @@ export class SkillsComponent implements OnInit {
       return this.procData.map((skill:skillsItemType) => skill.years);
     }
     return this.procData.map((skill:skillsItemType) => skill.rating);
+  }
 
+  getTypeOrder(type:string):number
+  {
+    switch (type) {
+      case 'Languages': return 1;
+      case 'Integrations': return 2;
+      case 'Development': return 3;
+      default: return 4;
+    }
+  }
+
+  sortData( data : skillsItemType[]): skillsItemType[] {
+    if(this.altMetric) {
+      data.sort( (a,b) => b.years - a.years);
+      data.sort( (a,b) => this.getTypeOrder(a.type) - this.getTypeOrder(b.type));
+    } else {
+      data.sort( (a,b) => b.rating - a.rating);
+      data.sort( (a,b) => this.getTypeOrder(a.type) - this.getTypeOrder(b.type));
+    }
+    return data;
   }
 
   getColors(): string[] {
     return this.procData.map((skill:skillsItemType) => {
-        switch (skill.type) {
-          case 'Languages': return this.colorLUT[0];
-          case 'Integrations': return this.colorLUT[1];
-          case 'Development': return this.colorLUT[2];
-          default: return this.colorLUT[3];
-        }
+      switch (skill.type) {
+        case 'Languages': return this.colorLUT[0];
+        case 'Integrations': return this.colorLUT[1];
+        case 'Development': return this.colorLUT[2];
+        default: return this.colorLUT[3];
+      }
     });
   }
 
@@ -63,18 +84,23 @@ export class SkillsComponent implements OnInit {
     this.updateData()
   }
 
+  setSort( sort:boolean) {
+    this.isSort=sort;
+    this.updateData();
+  }
 
   createChart(){
     if (this.chart)
     {
       this.chart.destroy();
     }
-    console.log(this.getLabels());
+    if (this.isSort) this.procData= this.sortData(this.procData);
+
     const data = {
       labels: this.getLabels(),
       datasets: [
         {
-          barThickness: 12,
+          barThickness: 10,
           data: this.getData(),
           backgroundColor: this.getColors(),
         },
@@ -83,14 +109,13 @@ export class SkillsComponent implements OnInit {
 
     this.chart = new Chart("skillsChart", {
       type: 'horizontalBar',
-
       data: data,
       options: {
         responsive: true,
         maintainAspectRatio: false,
 
         scales: {
-         xAxes: [{
+          xAxes: [{
             display: true,
             ticks: {
               suggestedMin: 0,
