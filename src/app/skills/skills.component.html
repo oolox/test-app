@@ -5,11 +5,38 @@
       <div class='radio-select'
            [ngStyle]="{'background-color': skill.color}"
            [ngClass]="skill.enabled ? 'radio-enable' : 'radio-disable'"
-           (click)="filterSelect(skill)"
+           (click)="setFilter(skill)"
       >
         {{skill.label}}
       </div>
     </div>
+
+    <div class="metric-box">
+      <div class="metric-selector">
+        <div class='metric-select'
+             [ngClass]="!altMetric ? 'metric-enable' : 'metric-disable'"
+             (click)="setMetric(false)"
+        >
+          Skill
+        </div>
+        <div class='metric-select'
+             [ngClass]="altMetric ? 'metric-enable' : 'metric-disable'"
+             (click)="setMetric(true)"
+        >
+          Years
+        </div>
+      </div>
+    </div>
+    <div class="metric-description" *ngIf="!altMetric">
+      X-Axis is self determined rating from 0-10. At Plume, self rating skills was part of
+      the screening I used with candidates during hiring. This chart includes various relevant skills.
+    </div>
+    <div class="metric-description" *ngIf="altMetric">
+      X-Axis is a rough estimate of how many years I have worked with, or been exposed to
+      various skills and technologies. This is a rough, self determined estimate.
+    </div>
+
+
   </div>
   <div class="chart-container">
     <canvas  id="skillsChart" >{{ chart }}</canvas>

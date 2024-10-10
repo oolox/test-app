@@ -27,6 +27,9 @@ export class SkillsComponent implements OnInit {
     { label: 'Tools', color: this.colorLUT[3], enabled: true },
   ]
 
+  altMetric:boolean=false;
+
+
   getLabels(): string[] {
     return this.procData.map((skill:skillsItemType) => skill.label);
   }
@@ -46,10 +49,16 @@ export class SkillsComponent implements OnInit {
     });
   }
 
-  filterSelect(filter:any) {
+  setFilter(filter:any) {
     filter.enabled=!filter.enabled
     this.updateData()
   }
+
+  setMetric( isAltMetric:boolean): void {
+    this.altMetric=isAltMetric;
+    this.updateData()
+  }
+
 
   createChart(){
     if (this.chart)

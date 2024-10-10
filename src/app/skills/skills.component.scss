@@ -2,25 +2,57 @@
   display: inline-flex;
 
   .chart-controls {
-    flex: 0.25;
+    flex: 0.33;
+    margin: 0.5rem 2rem 0 0;
+    .metric-box {
+      padding: 0.5rem;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      width: 100%;
+      background-color: #d0d0d0;
 
-  }
-  .chart-container {
-    padding-left: 1rem;
-    padding-top: 0rem;
-    width:600px;
-    height:600px;
-    flex: 0.75;
-  }
+      .metric-selector {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        text-transform: uppercase;
 
+        .metric-select {
+          flex: 1;
+          padding: 0.5rem;
+          font-size: 0.8rem;
+          cursor: pointer;
+          &.metric-enable {
+            background-color: #404040;
+            color: #e0e0e0
+          }
+          &.metric-disable {
+            background-color: #e0e0e0;
+            color: #808080
+          }
+        }
+        .metric-select:not(:last-child) {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    .metric-description {
+      padding: 0.5rem 0.5rem;
+      color: #808080;
+      font-size: 0.8rem;
+      width: 100%;
+      background-color: #d0d0d0;
+    }
+  }
   .radio-select {
     padding: 0.5rem;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0;
     font-size: 0.8rem;
-    width: 8rem;
-    color: lightgray;
+    width: 100%;
     cursor: pointer;
     text-transform: uppercase;
+    color: #d0d0d0;
 
     &.radio-enable {
       opacity: 1;
@@ -29,4 +61,14 @@
       opacity: 0.5;
     }
   }
+
+
+  .chart-container {
+    padding-left: 1rem;
+    padding-top: 0rem;
+    width:600px;
+    height:600px;
+    flex: 0.75;
+  }
 }
+
