@@ -1,10 +1,10 @@
 import { skillsItemType } from "../app.types";
 
 export const skillsData: skillsItemType[] = [
-  { label: 'Angular', type: 'Languages', rating: 10, years: 7  },
+  { label: 'Angular', type: 'Languages', rating: 10, years: 8  },
   { label: 'React', type: 'Languages', rating: 7 , years: 4 },
   { label: 'AngularJS', type: 'Languages', rating: 6 , years: 3 },
-  { label: 'NodeJS', type: 'Languages', rating: 7 , years: 5 },
+  { label: 'NodeJS', type: 'Languages', rating: 7 , years: 3 },
   { label: 'Javascript', type: 'Languages', rating: 8 , years: 10 },
   { label: 'Typescript', type: 'Languages', rating: 10 , years: 7 },
   { label: 'HTML', type: 'Languages', rating: 8 , years: 10 },

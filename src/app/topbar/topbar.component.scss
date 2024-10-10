@@ -1,83 +1,82 @@
-.title-bar {
-  width: 100%;
-  display: inline-flex;
-  padding-bottom: 1rem;
-
-  .title-content {
-
-    padding-right: 1rem;
-    .title {
-      text-transform: uppercase;
-      font-size: 1.4rem;
-      color: #202020;
-    }
-
-    .subtitle {
-      font-size: 0.8rem;
-      color: #808080;
-    }
-  }
-  .tools {
-    flex:1;
-    text-align: right;
-    font-size: 0.8rem;
-    .link
-    {
-      padding-bottom: 0.125rem;
-    }
-  }
-}
-
-.menu-bar {
-  display: inline-flex;
-  margin-bottom: 1rem;
-  width: 100%;
-
-  .menu-items {
-    display: inline-flex;
+.top-bar {
+  .title-bar {
     width: 100%;
-    text-transform: uppercase;
+    display: inline-flex;
+    padding-bottom: 1rem;
 
-    .menu-item {
-      padding: 0.5rem 0.5rem;
-      width: 100%;
-      cursor: pointer;
-
-      &.itemSelected {
-        background-color: #404040;
-        color: #e0e0e0
+    .title-content {
+      .title {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        color: #202020;
       }
 
-      &.itemNotSelected {
-        background-color: #d0d0d0;
-        color: #808080
+      .subtitle {
+        font-size: 0.8rem;
+        color: #808080;
       }
     }
 
-    &:not(:last-child) {
-      margin-right: 0.25rem;
+    .tools {
+      flex: 1;
+      text-align: right;
+      font-size: 0.8rem;
+
+      .link {
+        padding-bottom: 0.125rem;
+      }
     }
   }
+
+  .menu-bar {
+    display: inline-flex;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    .menu-items {
+      display: inline-flex;
+      width: 100%;
+      text-transform: uppercase;
+
+      .menu-item {
+        padding: 0.5rem 0.5rem;
+        width: 100%;
+        cursor: pointer;
+
+        &.itemSelected {
+          background-color: #404040;
+          color: #e0e0e0
+        }
+
+        &.itemNotSelected {
+          background-color: #d0d0d0;
+          color: #808080
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 0.25rem;
+      }
+    }
+  }
+
+  a:link {
+    color: #808080;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #808080;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #202020;
+    text-decoration: none;
+  }
+
+  a:active {
+    color: #808080;
+    text-decoration: none;
+  }
 }
-
-a:link {
-  color: #808080;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #808080;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #202020;
-  text-decoration: none;
-}
-
-a:active {
-  color: #808080;
-  text-decoration: none;
-}
-
-
