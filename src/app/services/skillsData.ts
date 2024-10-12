@@ -33,5 +33,5 @@ export const skillsData: skillsItemType[] = [
   { label: 'Adobe', type: 'Tools', rating: 7 , years: 10 },
   { label: 'Curl / Postman', type: 'Tools', rating: 8 , years: 10 },
   { label: 'Google Suite', type: 'Tools', rating: 5 , years: 8 },
-] || null;
+];
 

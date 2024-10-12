@@ -1,56 +1,50 @@
 {
-  "hash": "2ed1242b",
-  "configHash": "a714535c",
+  "hash": "191f61b3",
+  "configHash": "80cdba31",
   "lockfileHash": "e2026854",
-  "browserHash": "c7104353",
+  "browserHash": "fd1b615b",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "c727fd9a",
+      "fileHash": "0d58c2a5",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "1e082e1f",
+      "fileHash": "e3f2a9dd",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "4e647905",
+      "fileHash": "9ba03c7c",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "4ee12d5b",
+      "fileHash": "a2abf1a8",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "90b34774",
+      "fileHash": "d202c433",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "286b8a62",
+      "fileHash": "ac2d700b",
       "needsInterop": false
     },
     "chart.js": {
       "src": "../../../../../node_modules/chart.js/dist/Chart.js",
       "file": "chart__js.js",
-      "fileHash": "945d206e",
+      "fileHash": "c1892a37",
       "needsInterop": true
-    },
-    "@angular/animations": {
-      "src": "../../../../../node_modules/@angular/animations/fesm2022/animations.mjs",
-      "file": "@angular_animations.js",
-      "fileHash": "14058f19",
-      "needsInterop": false
     }
   },
   "chunks": {
