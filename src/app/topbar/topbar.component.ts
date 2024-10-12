@@ -10,7 +10,6 @@ import {menuItem, screenName} from '../app.types';
   styleUrl: './topbar.component.scss'
 })
 
-
 export class TopbarComponent {
   @Output() menuSelect = new EventEmitter<screenName>();
   @Input() selected:screenName = 'OVERVIEW';
@@ -40,5 +39,4 @@ export class TopbarComponent {
     item.selected = true;
     this.menuSelect.emit(item.action);
   }
-
 }
