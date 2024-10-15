@@ -72,7 +72,7 @@ export const timelinedata: jobItemType[] = [
       link: 'https://www.linkedin.com/company/badgeville/',
       jobTitle: 'Front End Developer',
       location: 'Redwood City, CA',
-      start: '2015',
+      start: '2014',
       end: '2016',
       details: [
         'Developed web applications for SAAS gamification platform',
