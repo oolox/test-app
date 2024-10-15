@@ -9,11 +9,11 @@ export const timelinedata: jobItemType[] = [
       start: '2018',
       end: '2024',
       details: [
-        'Development of multiple B2B applications to support SAS network optimization.',
+        'Developed multiple B2B applications to support SaaS network optimization.',
         'Created complex visualizations, controls and features in Angular and React',
         'Drove adoption of standards and methods to optimize development process.',
-        'Design, develop and maintain network operations center used by global telecom companies.',
-        'Work across internal teams to define and create features and products. (API/Product/Design/QA)',
+        'Designed, develop and maintained network operations center used by global telecom companies.',
+        'Worked across internal teams to define and create features and products. (API/Product/Design/QA)',
         'Oversaw growth of team from 1 to 12+ members; creating a high performance team.',
       ],
       screenshots: [
@@ -42,13 +42,13 @@ export const timelinedata: jobItemType[] = [
       link: 'https://www.linkedin.com/company/agilone/',
       jobTitle: 'Lead Front End Developer',
       location: 'Sunnyvale, CA',
-      start: '2016',
+      start: '2015',
       end: '2018',
       details: [
         'Developed customer facing SAAS marketing application',
-        'Architect stack and structure for complex Angular Material web applications',
-        'Integrate third party components for ui, security and visualization (D3)',
-        'Resolve tickets with legacy code base during upgrade cycle',
+        'Architected stack and structure for complex Angular Material web applications',
+        'Integrated third party components for ui, security and visualization (D3)',
+        'Resolved tickets with legacy code base during upgrade cycle',
         'Built team of front end developers, and mentored junior developers'
 
       ],
@@ -73,7 +73,7 @@ export const timelinedata: jobItemType[] = [
       jobTitle: 'Front End Developer',
       location: 'Redwood City, CA',
       start: '2014',
-      end: '2016',
+      end: '2015',
       details: [
         'Developed web applications for SAAS gamification platform',
         'Migrated legacy code from PHP stack to Angular with bootstrap',
@@ -104,10 +104,10 @@ export const timelinedata: jobItemType[] = [
     start: '2010',
     end: '2014',
     details: [
-      'Hardware prototyping, embedded development, responsive web design',
-      'Embedded linux development, industrial control',
-      'Integration of realtime data to video overlay for sports broadcast',
-      'Internet TV development for hospitality vertical'
+      'Prototyped hardware, built IOT pipelines, developed frontend/mobile applications',
+      'Developed embedded linux and industrial control systems',
+      'Integrated realtime sensor data to video overlay for sports broadcast',
+      'Developed Internet TV for hospitality vertical'
     ],
     screenshots: [
       { fileName:'assets/img/adrGarage.png',
