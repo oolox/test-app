@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {timelineData } from "../services/timelineData";
 import { CommonModule  } from '@angular/common';
-import {jobItemType, screenshotType} from "../app.types";
+import {jobItemType, screenName, screenshotType} from "../app.types";
 import {SlideModalComponent} from "../slide-modal/slide-modal.component";
 
 
@@ -18,6 +18,7 @@ export class LinksComponent implements OnInit {
   timeline = timelineData;
   screenshots: screenshotType[] = [];
   screenData: screenshotType= {};
+  showModal: boolean = false;
 
   ngOnInit() {
     this.timeline.map( ( job:jobItemType) => {
@@ -31,7 +32,13 @@ export class LinksComponent implements OnInit {
   }
   onEvent(event:Event, item:screenshotType) {
     this.screenData= item;
+    this.showModal=true;
     event.stopPropagation();
+  }
+
+  modalClose(action: any) {
+    this.showModal=false;
+    console.log('modalClose');
   }
 }
 
