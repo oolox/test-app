@@ -1,6 +1,6 @@
 import {jobItemType} from "../app.types";
 
-export const timelinedata: jobItemType[] = [
+export const timelineData: jobItemType[] = [
     {
       company: 'Plume Design',
       link: 'https://www.linkedin.com/company/plume-wifi/',
@@ -17,14 +17,14 @@ export const timelinedata: jobItemType[] = [
         'Oversaw growth of team from 1 to 12+ members; creating a high performance team.',
       ],
       screenshots: [
+        { fileName:'assets/img/plume3.png',
+          description:'Detailed time domain graphs driven by APIs and realtime data.'
+        },
         { fileName:'assets/img/plume1.png',
           description:'Realtime network topology via socket, rendered with D3 as a force graph.'
         },
         { fileName:'assets/img/plume2.png',
-          description:'Reconfigurable, interactive health check tool used by technicians.'
-        },
-        { fileName:'assets/img/plume3.png',
-          description:'Detailed time domain graphs driven by APIs and realtime data.'
+          description:'Interactive health check, status and alarm dashboard.'
         },
         { fileName:'assets/img/plume4.png',
           description:'Visual diagnostic tools for technicians to optimize network locations.'
@@ -33,7 +33,7 @@ export const timelinedata: jobItemType[] = [
           description:'Timeline data via REST reports specific metrics over time.'
         },
         { fileName:'assets/img/plume9.png',
-          description:'Integrated Dashboard latched by user permissions, used by T1 at customer locations.'
+          description:'Responsive, integrated dashboard used by technicians on tablets.'
         }
       ]
     },

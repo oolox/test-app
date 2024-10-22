@@ -1,0 +1,18 @@
+<div class="links-container">
+  <div class="screenshot-container">
+    <div *ngFor="let screen of screenshots" class="screenshots" >
+      <div class="screenshot" (click)="onEvent($event,screen)">
+        <img alt="{{screen.description}}" class="screen-image" src="{{screen.fileName}}" height="180" width="240"/>
+        <div class="screen-label">
+          <div class="screen-title">
+            <b>{{screen.company}}</b>
+            <br/>
+            {{screen.description}}
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

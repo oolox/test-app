@@ -3,7 +3,7 @@ import { skillsItemType,filterType} from "../app.types";
 import { skillsData } from "../services/skillsData";
 import { CommonModule  } from '@angular/common';
 import Chart from 'chart.js';
-import {timelinedata} from "../services/timelineData";
+import {timelineData} from "../services/timelineData";
 
 @Component({
   selector: 'app-skills',
@@ -29,7 +29,6 @@ export class SkillsComponent implements OnInit {
 
   altMetric:boolean=false;
   isSort:boolean=false;
-
 
   getLabels(): string[] {
     return this.procData.map((skill:skillsItemType) => skill.label);
@@ -149,6 +148,5 @@ export class SkillsComponent implements OnInit {
     this.updateData();
   }
 
-  protected readonly skillsData = skillsData;
-  protected readonly timeline = timelinedata;
+  protected readonly timeline = timelineData;
 }

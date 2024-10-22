@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {timelinedata } from "../services/timelineData";
+import {timelineData } from "../services/timelineData";
 import {jobItemType, screenshotType} from "../app.types";
 import {JsonPipe, NgForOf, NgIf, NgStyle} from "@angular/common";
 
@@ -17,7 +17,7 @@ import {JsonPipe, NgForOf, NgIf, NgStyle} from "@angular/common";
 })
 
 export class TimelineComponent {
-  timeline = timelinedata;
+  timeline = timelineData;
   showModal:boolean= false;
   showScreen:screenshotType | null= null;
   colorLUT: string[] = ['#206080','#208060','#806020','#802060'];

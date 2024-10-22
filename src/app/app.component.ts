@@ -6,7 +6,7 @@ import {TopbarComponent} from "./topbar/topbar.component";
 import {TimelineComponent} from "./timeline/timeline.component";
 import {SkillsComponent} from "./skills/skills.component";
 import {ResumeComponent} from "./resume/resume.component";
-import {ContactComponent} from "./contact/contact.component";
+import {LinksComponent} from "./links/links.component";
 
 import {screenName} from "./app.types";
 
@@ -15,7 +15,7 @@ import {screenName} from "./app.types";
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, CommonModule,
-    TopbarComponent, TimelineComponent, SkillsComponent, ResumeComponent, ContactComponent],
+    TopbarComponent, TimelineComponent, SkillsComponent, ResumeComponent, LinksComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

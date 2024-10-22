@@ -10,7 +10,7 @@ export interface jobItemType {
   selected?: boolean;
   screenshots?: screenshotType[];
   details?: string[];
-}
+};
 
 export interface skillsItemType {
     label: string;
@@ -22,6 +22,7 @@ export interface skillsItemType {
 export interface screenshotType {
   fileName: string;
   description: string;
+  company?: string;
 }
 
 export interface menuItem {
