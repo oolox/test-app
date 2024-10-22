@@ -1,5 +1,5 @@
 <div class="links-container">
-  <slide-modal *ngIf="showModal" [screen]="screenData" (close)="modalClose($event)"></slide-modal>
+  <slide-modal *ngIf="showModal" [screen]="screenData" (close)="modalClose()"></slide-modal>
 
   <div class="screenshot-container">
     <div *ngFor="let screen of screenshots" class="screenshots" >

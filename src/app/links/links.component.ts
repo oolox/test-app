@@ -36,9 +36,8 @@ export class LinksComponent implements OnInit {
     event.stopPropagation();
   }
 
-  modalClose(action: any) {
+  modalClose() {
     this.showModal=false;
-    console.log('modalClose');
   }
 }
 

@@ -28,16 +28,13 @@ export class TimelineComponent {
     item.selected=!item.selected;
   }
 
-  modalClose(action: any) {
+  modalClose() {
     this.showModal=false;
-    console.log('modalClose');
   }
 
   onEvent(event:Event, item:screenshotType) {
     this.showModal=true;
     this.showScreen= { ...item, ...{company:item.company }};
-    console.log('showScreen: ',this.showScreen);
-
     event.stopPropagation();
   }
 }
