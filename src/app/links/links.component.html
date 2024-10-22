@@ -1,4 +1,6 @@
 <div class="links-container">
+  <slide-modal [screen]="screenData"></slide-modal>
+
   <div class="screenshot-container">
     <div *ngFor="let screen of screenshots" class="screenshots" >
       <div class="screenshot" (click)="onEvent($event,screen)">
@@ -10,8 +12,6 @@
             {{screen.description}}
           </div>
         </div>
-
-
       </div>
     </div>
   </div>

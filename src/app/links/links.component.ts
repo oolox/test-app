@@ -1,12 +1,15 @@
 import {Component, OnInit} from '@angular/core';
 import {timelineData } from "../services/timelineData";
 import { CommonModule  } from '@angular/common';
-import {jobItemType, screenshotType, skillsItemType} from "../app.types";
+import {jobItemType, screenshotType} from "../app.types";
+import {SlideModalComponent} from "../slide-modal/slide-modal.component";
+
+
 
 @Component({
   selector: 'app-links',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SlideModalComponent],
   templateUrl: './links.component.html',
   styleUrl: './links.component.scss'
 })
@@ -14,6 +17,7 @@ import {jobItemType, screenshotType, skillsItemType} from "../app.types";
 export class LinksComponent implements OnInit {
   timeline = timelineData;
   screenshots: screenshotType[] = [];
+  screenData: screenshotType= {};
 
   ngOnInit() {
     this.timeline.map( ( job:jobItemType) => {
@@ -24,15 +28,11 @@ export class LinksComponent implements OnInit {
         });
       }
     })
-    console.log('screenshots:', this.screenshots);
   }
-
   onEvent(event:Event, item:screenshotType) {
-    console.log('onEvent:',item);
+    this.screenData= item;
     event.stopPropagation();
   }
-
-  // this.procData.map((skill:skillsItemType) => skill.years);
 }
 
 

@@ -20,8 +20,8 @@ export interface skillsItemType {
 }
 
 export interface screenshotType {
-  fileName: string;
-  description: string;
+  fileName?: string;
+  description?: string;
   company?: string;
 }
 
