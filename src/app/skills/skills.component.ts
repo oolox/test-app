@@ -134,9 +134,7 @@ export class SkillsComponent implements OnInit {
   }
 
   updateData(): void {
-    console.log('updateData');
     this.procData=skillsData;
-
     this.procData=this.procData.filter( (skill:skillsItemType) => {
       const isEnabled = this.skillsFilter.find((el) => el.label===skill.type);
       return isEnabled?.enabled;

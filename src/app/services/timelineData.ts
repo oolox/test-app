@@ -111,18 +111,17 @@ export const timelineData: jobItemType[] = [
     ],
     screenshots: [
       { fileName:'assets/img/adrGarage.png',
-        description:'Graphics Generation for Live Sports Broadcast'
+        description:'(Adrenaline Garage) graphics generation for live sports broadcast'
       },
       { fileName:'assets/img/beerlog.png',
-        description:'Beerlog: Keg Flow and Status Monitoring'
+        description:'(Beerlog) Keg flow and status monitoring'
       },
       { fileName:'assets/img/simulcare.png',
-        description:'Simulcare II: Mobile Controlled Therapy Device'
+        description:'(Simulcare II) Mobile controlled therapy device'
       },
       { fileName:'assets/img/roomlinx.png',
-        description:'Roomlinx: Internet and POS integrated internet TV.'
+        description:'(Roomlinx) Internet and POS integrated internet TV.'
       },
-
     ]
   }
   ];
