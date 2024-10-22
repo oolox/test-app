@@ -13,9 +13,30 @@
         {{skill.label}}
       </div>
     </div>
+
     <div class="metric-box">
       <div class="metric-title">
-          Metric
+        Sorting
+      </div>
+      <div class="metric-selector">
+        <div class='metric-select'
+             [ngClass]="!isSort ? 'metric-enable' : 'metric-disable'"
+             (click)="setSort(false)"
+        >
+          Logical
+        </div>
+        <div class='metric-select'
+             [ngClass]="isSort ? 'metric-enable' : 'metric-disable'"
+             (click)="setSort(true)"
+        >
+          By Metric
+        </div>
+      </div>
+    </div>
+
+    <div class="metric-box">
+      <div class="metric-title">
+        Metric
       </div>
       <div class="metric-selector">
         <div class='metric-select'
@@ -43,25 +64,7 @@
       X-Axis is a estimate of how many years I have worked with, or been exposed to
       various skills and technologies. This is a rough, self determined estimate, based on exposure and immersion.
     </div>
-    <div class="metric-box">
-      <div class="metric-title">
-        Sorting
-      </div>
-      <div class="metric-selector">
-        <div class='metric-select'
-             [ngClass]="!isSort ? 'metric-enable' : 'metric-disable'"
-             (click)="setSort(false)"
-        >
-          Logical
-        </div>
-        <div class='metric-select'
-             [ngClass]="isSort ? 'metric-enable' : 'metric-disable'"
-             (click)="setSort(true)"
-        >
-          By Metric
-        </div>
-      </div>
-    </div>
+
   </div>
   <div class="chart-container">
     <canvas  id="skillsChart" >{{ chart }}</canvas>
